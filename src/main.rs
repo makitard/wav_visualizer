@@ -30,7 +30,7 @@ fn main() {
 
 	for x in 0..=(samples.len()-1) as u32 {
 		let sample_x = (((samples[x as usize] as i32) + 32767) as f32 /100.0) as u32;
-		for y in 0..=(655-1) as u32 {
+		for y in 0..=(654) as u32 {
 			if sample_x == y {
 				img.put_pixel(x, y, image::Rgb([115, 115, 255]));
 			} else if y > sample_x {
